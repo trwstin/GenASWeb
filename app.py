@@ -29,11 +29,11 @@ app.layout = html.Div(
                         html.Div(
                             [
                                 html.H3(
-                                    "Genshin Impact",
+                                    "GenAS v1.0",
                                     style={"margin-bottom": "0px"},
                                 ),
                                 html.H5(
-                                    "Artifact Farming Simulator", style={"margin-top": "0px",
+                                    "Genshin Artifact Simulator", style={"margin-top": "0px",
                                                                          "color": "dodgerblue"}
                                 ),
                             ]
