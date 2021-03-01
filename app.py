@@ -1,3 +1,4 @@
+import numpy as np
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
@@ -203,8 +204,8 @@ def farm_artifact(n_clicks, domain, resin_amt):
         elif resin_amt == str(40):
             artifact1 = [artifact_gen(domain)]
             artifact2 = [artifact_gen(domain)]
-            arti_list = [artifact1, artifact2]
-            return html.Ul([html.Li(x) for x in arti_list])
+            artifact_list = np.array([artifact1, artifact2])
+            return html.Ul([html.Li(x) for x in artifact_list])
     return "Select a domain and click 'Farm' to begin!"
 
 
@@ -256,7 +257,7 @@ def update_inventory(n_clicks_farm, n_clicks_upgrade, selected_artifact):
         return "Your inventory is empty!", []
 
     elif n_clicks_farm > 0 and "farm_button" in changed_id:
-        inventory_list = [str(x) for x in inventory.values()]
+        inventory_list = np.array([str(x) for x in inventory.values()])
         return html.Ol([html.Li(x) for x in inventory_list]), \
                [{"label": item, "value": item} for item in inventory_list]
 
@@ -266,7 +267,7 @@ def update_inventory(n_clicks_farm, n_clicks_upgrade, selected_artifact):
                 artifact = inventory.get(str(key))
                 artifact.enhance()
                 inventory[str(key)] = artifact
-        inventory_list = [str(x) for x in inventory.values()]
+        inventory_list = np.array([str(x) for x in inventory.values()])
         return html.Ol([html.Li(x) for x in inventory_list]), \
                [{"label": item, "value": item} for item in inventory_list]
 
