@@ -126,14 +126,16 @@ app.layout = html.Div(
         # Upgrade
         html.Details([
             html.Summary("Upgrade", style={"margin-left": "10px", "margin-top": "10px"}),
-            html.Div(
-                [html.P("Select which artifact to upgrade: "),
-                 dcc.Dropdown(options=[], id="artifact_select"),
-                 html.Button("Upgrade",
-                             style={"margin-top": "20px"},
-                             id="upgrade_button",
-                             className="button")],
-                html.Div(id="upgrade_box", className="pretty_container"))
+            html.Div([
+                html.Div(
+                    [html.P("Select which artifact to upgrade: "),
+                     dcc.Dropdown(options=[], id="artifact_select"),
+                     html.Button("Upgrade",
+                                 style={"margin-top": "20px"},
+                                 id="upgrade_button",
+                                 className="button")]
+                )],
+                id="upgrade_box", className="pretty_container")
         ])
     ],
     id="mainContainer",
