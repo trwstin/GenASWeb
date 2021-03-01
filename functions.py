@@ -3,7 +3,6 @@ from classes import *
 global inventory
 inventory = {}
 
-
 # convert numStats list to int
 def listToInt(num):
     s = ''.join(map(str, num))

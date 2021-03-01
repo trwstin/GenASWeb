@@ -1,19 +1,4 @@
-import pathlib
-import dash
 
-
-# get relative data folder
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("data").resolve()
-
-
-# app settings
-app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
-app.title = "Genshin Artifact Simulator"
-server = app.server
-
-
-# dictionaries
 artifact_types = ['Flower', 'Feather', 'Timepiece', 'Goblet', 'Circlet']
 
 artifact_sets = {'Midsummer Courtyard': 'Thundering Fury,Thundersoother',

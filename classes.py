@@ -1,6 +1,7 @@
 import random
 from utils import *
 
+
 class Artifact:
     def __init__(self, name, slot, mainStat, mainStatValue, subStat):
         self.name = name
