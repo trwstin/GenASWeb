@@ -3,6 +3,15 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 from functions import *
+import rollbar
+
+rollbar.init('30f06297acb44464b64b12fc9008e144')
+rollbar.report_message('Rollbar is configured correctly')
+
+try:
+    b = a + 1
+except:
+    rollbar.report_exc_info()
 
 # Create app layout
 app.layout = html.Div(
