@@ -43,10 +43,11 @@ def resin_counter(n_clicks, resin_amt, current_amt):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     if current_amt is None:
         current_amt = 0
-    if n_clicks > 0 and "farm_button" in changed_id and resin_amt == str(20):
-        current_amt = int(current_amt) + 1
-    elif n_clicks > 0 and "farm_button" in changed_id and resin_amt == str(40):
-        current_amt = int(current_amt) + 2
+    if n_clicks > 0 and "farm_button" in changed_id:
+        if resin_amt == str(20):
+            current_amt = int(current_amt) + 1
+        elif resin_amt == str(40):
+            current_amt = int(current_amt) + 2
     return str(current_amt)
 
 # Updates the total resin used
