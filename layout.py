@@ -3,7 +3,7 @@ import dash_html_components as html
 import dash
 
 # app settings
-app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+app = dash.Dash(__name__, update_title=None)
 app.title = "Genshin Artifact Simulator"
 server = app.server
 
