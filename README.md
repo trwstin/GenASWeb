@@ -8,5 +8,5 @@ Web version of my [Genshin Artifact Simulator](https://github.com/trwstin/GenAS)
 4. Track total artifacts farmed and resin usage
 
 ## Notes
-Only includes artifacts from Mondstadt and Liyue.
-Will add Inazuma and Sumeru artifacts in Summer 2023.
+- Only includes artifacts from Mondstadt and Liyue.
+- Will add Inazuma and Sumeru artifacts in Summer 2023.
