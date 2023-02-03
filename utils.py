@@ -6,13 +6,20 @@ artifact_sets = {'Midsummer Courtyard': 'Thundering Fury,Thundersoother',
                  'Domain of Guyun': 'Archaic Petra,Retracing Bolide',
                  'Hidden Palace of Zhou Formula': 'Crimson Witch of Flames,Lavawalker',
                  'Clear Pool and Mountain Cavern': 'Noblesse Oblige,Bloodstained Chivalry',
-                 'Peak of Vindagnyr': 'Blizzard Strayer,Heart of Depth'}
+                 'Peak of Vindagnyr': 'Blizzard Strayer,Heart of Depth',
+                 'Ridge Watch': 'Tenacity of the Millelith,Pale Flame',
+                 'Slumbering Court': 'Husk of Opulent Dreams,Ocean-Hued Clam',
+                 'Momiji-Dyed Court': 'Shimenawa\'s Reminiscence,Emblem of Severed Fate',
+                 'The Lost Valley': 'Vermillion Hereafter,Echoes of an Offering',
+                 'Spire of Solitary Enlightenment': 'Deepwoord Memories,Gilded Dreams',
+                 'City of Gold': 'Desert Pavilion Chronicle,Flower of Paradise Lost'}
 
 mainstat_dict = {'Flower': 'HP',
                  'Feather': 'ATK',
                  'Timepiece': 'HP%,DEF%,ATK%,Elemental Mastery,Energy Recharge %',
                  'Goblet': 'HP%,DEF%,ATK%,Elemental Mastery,Physical Damage %,'
-                           'Hydro Damage %,Cryo Damage %,Pyro Damage %,Electro Damage %,Geo Damage %,Anemo Damage %',
+                           'Hydro Damage %,Cryo Damage %,Pyro Damage %,'
+                           'Electro Damage %,Geo Damage %,Anemo Damage %,Dendro Damage %',
                  'Circlet': 'HP%,DEF%,ATK%,Elemental Mastery,'
                             'Crit Rate %,Crit Damage %,Healing Bonus %'}
 
@@ -43,4 +50,5 @@ mainStat_upgrades = {'HP': '717,1530,2342,3155,3967,4780',
                      'Electro Damage %': '7.0,14.9,22.8,30.8,38.7,46.6',
                      'Anemo Damage %': '7.0,14.9,22.8,30.8,38.7,46.6',
                      'Hydro Damage %': '7.0,14.9,22.8,30.8,38.7,46.6',
-                     'Geo Damage %': '7.0,14.9,22.8,30.8,38.7,46.6'}
+                     'Geo Damage %': '7.0,14.9,22.8,30.8,38.7,46.6',
+                     'Dendro Damage %': '7.0,14.9,22.8,30.8,38.7,46.6'}
