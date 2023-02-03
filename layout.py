@@ -1,6 +1,7 @@
 import dash_core_components as dcc
 import dash_html_components as html
 import dash
+from utils import *
 
 # app settings
 app = dash.Dash(__name__, update_title=None)
@@ -53,30 +54,7 @@ app.layout = html.Div(
                 dcc.Dropdown(
                     id="domain_dropdown",
                     className="dcc_control",
-                    options=[{"label": "Midsummer Courtyard",
-                              "value": "Midsummer Courtyard"},
-                             {"label": "Domain of Guyun", 
-                              "value": "Domain of Guyun"},
-                             {"label": "Valley of Remembrance",
-                              "value": "Valley of Remembrance"},
-                             {"label": "Hidden Palace of Zhou Formula",
-                              "value": "Hidden Palace of Zhou Formula"},
-                             {"label": "Clear Pool and Mountain Cavern",
-                              "value": "Clear Pool and Mountain Cavern"},
-                             {"label": "Peak of Vindagnyr",
-                              "value": "Peak of Vindagnyr"},
-                             {"label": "Ridge Watch",
-                              "value": "Ridge Watch"},
-                             {"label": "Slumbering Court",
-                              "value": "Slumbering Court"},
-                             {"label": "Momiji-Dyed Court",
-                              "value": "Momiji-Dyed Court"},
-                             {"label": "The Lost Valley",
-                              "value": "The Lost Valley"},
-                             {"label": "Spire of Solitary Enlightenment",
-                              "value": "Spire of Solitary Enlightenment"},
-                             {"label": "City of Gold",
-                              "value": "City of Gold"}],
+                    options=[{'label': i, 'value': i} for i in list(artifact_sets.keys())],
                     value='Midsummer Courtyard',
                     multi=False,
                     clearable=False),
