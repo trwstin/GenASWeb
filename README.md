@@ -8,4 +8,4 @@ Web version of my [Genshin Artifact Simulator](https://github.com/trwstin/GenAS)
 4. Track total artifacts farmed and resin usage
 
 ## Notes
-- Currently includes artifacts up until Version 3.4.
+- Currently includes artifacts up until Version 3.4..
