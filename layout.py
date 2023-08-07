@@ -1,6 +1,5 @@
 import dash
-from dash import dcc
-from dash import html
+from dash import dcc, html
 from utils import *
 
 # app settings
