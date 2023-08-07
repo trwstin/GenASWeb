@@ -1,5 +1,5 @@
 import numpy as np
-from dash.dependencies import Input, Output
+from dash import Input, Output, callback
 from functions import *
 from layout import *
 
